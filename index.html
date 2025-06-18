@@ -69,7 +69,7 @@
         const modelAspectRatio1 = bowserModel1.object3D.boundingBox.max.x / bowserModel1.object3D.boundingBox.max.y;
         const scaleX = markerWidth / modelAspectRatio;
         const scaleY = markerHeight;  
-        bowserModel.setAttribute('scale', { x: scaleX, y: scaleY, z: scaleZ });
+        bowserModel.setAttribute('scale', { x: scaleX, y: scaleY, z: scaleY });
       });
       marker.addEventListener('markerLost', () => {
         soundEntity.components.sound.stopSound();
